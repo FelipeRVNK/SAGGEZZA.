@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #ffffff;
+    border-radius: 5rem;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 7%;
+    background-color: #ffffff;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo a{
+    font-family: 'Bowlby One SC', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+.logo span{
+    font-size: 17px;
+}
+
+ion-icon {
+    color:rgb(131, 11, 11);
+    padding-right: 30px;
+}
+
+
+/*APRESENTAÇAO SAGGEZZA.*/
+
+.apresentaçao {
+    text-align: center;
+    padding: 300px 0;
+    background-image: url(images/fundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.apresentaçao span{
+    font-family: 'Bowlby One SC', sans-serif;
+    text-shadow: 2px 2px 1px rgba(227, 223, 223, 0.917)
+}
+.apresentaçao h1 {
+    color: rgb(134, 9, 9);
+    font-size: 56px;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+}
+.apresentaçao p{
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 2px 3px 2px rgb(0, 0, 0);
+    font-size: 34px;
+    font-weight: bolder
+}
+.button-apresentaçao {
+    display: inline-block;
+    background-color:rgb(131, 11, 11);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.button-apresentaçao:hover{
+    transition: 0.6s;
+    letter-spacing: .2rem;
+}
+
+
+/*BLACK-FRIDAY*/
+
+.black-friday {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.black-friday img{
+    width: 45%;
+}
+
+.promo-bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-texto {
+    padding: 20px;
+    font-size: x-large;
+}
+
+.promo-texto h2 {
+    font-size: 44px;
+}
+
+
+/*PRINCIPAIS PROMOÇÕES*/
+
+.principais-promo .box-container-princi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap:1.5rem;
+    justify-items: center;
+    max-width: 100%;
+}
+.principais-promo .title-principais{
+    font-size: 40px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+    color:rgb(131, 11, 11);
+    text-shadow: -2.5px 1px 2px black;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    margin: 0;
+}
+.principais-promo .box-container-princi .box-princi{
+    border: .1rem solid rgba(8, 7, 7, 0.3);
+}
+
+.principais-promo .box-container-princi .box-princi .image-princi{
+    height: 30rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.principais-promo .box-container-princi .box-princi .image-princi img{
+    height:100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.principais-promo .box-container-princi .box-princi .image-princi img:hover{
+    transform: scale(1.2);
+}
+
+.principais-promo .box-container-princi .box-princi .content-princi{
+    padding:2rem;
+}
+
+.principais-promo .box-container-princi .box-princi .content-princi .title-princi {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:#000000;
+}
+
+.principais-promo .box-container-princi .box-princi .content-princi .title-princi:hover{
+    color:rgb(131, 11, 11);
+}
+.principais-promo .box-container-princi .box-princi .content-princi h1{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#fffcfc;
+    padding:1rem 0;
+}
+.preço{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.preço .de{
+    color: rgba(62, 61, 61, 0.711);
+    text-decoration: line-through;
+    font-size: medium;
+}
+.preço .para{
+    font-weight: bolder;
+    font-size: larger;
+}
+.preço .off{
+    color:rgb(42, 173, 6);
+    font-size: large;
+    font-weight: bolder;
+}
+.btn{
+    font-size: 1rem;
+    padding: .9rem 3rem;
+    color: #ffffff;
+    background-color: rgb(154, 15, 15);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btn:hover{
+    transition: 0.6s;
+    letter-spacing: .2rem;
+}
+
+
+/*MAIS DESEJADAS - MARCAS*/
+
+.brands {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 30px 50px 100px;
+
+}
+
+.brands h3 {
+    font-family: 'BenchNine', sans-serif;
+    padding: 50px 0px 25px;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.brand-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 16px;
+}
+
+.brand-logos a {
+    padding-bottom: 30px;
+    text-align: center;
+    display: block;
+}
+
+.brand-logos img {
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    max-width: 100%;
+}
+.brand-logos img:hover{
+    border: 5px solid #0000;
+    background: linear-gradient(rgba(255, 255, 255, 0.929),rgba(255, 255, 255, 0.905)) padding-box, linear-gradient(rgb(146, 1, 1),rgb(1, 114, 97)) border-box;
+}
+
+
+/*PROXIMOS LANÇAMENTOS*/
+
+.title-prox h2{
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.box-prox img{
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.proximos-lançamentos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px, auto));
+    justify-items: center; 
+    align-items: center;
+}
+.box-prox{
+    padding: 17% 19% 30%;
+}
+.box-prox h5{
+    color: #636363;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.box-prox h4{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box-prox p{
+    color: #707070;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.box-prox h6{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+    border: 3px solid black;
+}
+.box-prox h6:hover{
+    color: #ffffff;
+    background-color: #5d0505;
+    border: 3px solid #5d0505;
+    box-shadow: -2px 2px 5px black;
+}
+
+
+/*REDES - SIGA NOSSAS REDES*/
+
+.redes{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.redes .title-siga{
+    padding-top: 20px;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 43px;
+    font-weight: bold;
+    margin: 0;
+}
+.redes h1{
+    color: #000000;
+}
+.redes .box-redes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+    padding: 4rem 0 9rem ;
+}
+
+.redes .box-redes a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 42px;
+    color:#680606;
+    color:#070707;
+    border:4px solid rgba(86, 2, 2, 0.867);
+    border:4px solid rgb(0, 0, 0);
+    
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.redes .logo-redes a:hover {
+    color:#070707;
+    color:#680606;
+    border:4px solid rgb(0, 0, 0);
+    border:4px solid rgba(86, 2, 2, 0.867);
+    background-color: #706d6d08;
+}
+
+
+/*CONTATOS/SUPORTE*/
+
+.contact{
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+
+}
+.contact p{
+    color: #fff;
+    margin-top: 5px;
+    max-width: 600px;
+}
+.container-contact{
+    display: flex;
+    justify-content: center;
+    padding: 100px 60px 30px 40px;
+    display: flex;
+    justify-content: center;
+}
+.container-contact .content-contact{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.container-contact .content-contact .left-side{
+    width: 25%;
+    height: 100%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.content-contact .left-side::before{
+    content: ' ';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+}
+
+.content-contact .left-side .adress{
+    margin: 27px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+.content-contact .left-side .adress i{
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.content-contact .left-side .adress .topic{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.content-contact .left-side .adress .texto-um,
+.content-contact .left-side .adress .texto-dois{
+    padding-top: 5px;
+    font-size:14px;
+    color: #ffffff;
+}
+
+.container-contact .content-contact .right-side{
+    width: 75%;
+    margin-left: 100px;
+}
+
+.content-contact .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.right-side .input-box{
+    height: 50px;
+    width: 90%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,.right-side .input-box textarea{
+    height: 100%;
+    width:100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.868);
+    border-radius: 5px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .input-box textarea{
+    padding-top: 7px;
+    padding-bottom: 20px;
+}
+
+.right-side .button-contact{
+    padding-top: 40px;
+}
+
+
+/*BOTAO TOPO*/
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(106, 11, 11);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

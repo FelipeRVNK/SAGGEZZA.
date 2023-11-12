@@ -1,0 +1,103 @@
+@media (max-width: 950px) {
+    
+    .container-contact{
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+    .container-contact .content-contact .right-side{
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 880px){
+    
+    .apresentaçao span{
+        display: block;
+    }
+    .box-prox{
+        padding: 10% 10% 10%;
+        width: 80%;
+    }
+    .box-prox img{
+        width: 100%;
+    }
+    .box-princi{
+        width: 90%;
+        margin-right: 3.5px;
+    }
+    .principais-promo .box-container-princi{
+        gap: 3rem;
+        padding-bottom: 30px;
+    }
+    .principais-promo .box-container-princi .box-princi .image-princi {
+        height: 50%;
+    }
+    
+    .preço{
+        font-size:1rem;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .container-contact{
+        margin: 40px 0;
+    }
+    .container-contact .content-contact{
+        flex-direction: column-reverse;
+    }
+    .container-contact .content-contact .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .container-contact .content-contact .left-side::before{
+       display: none; 
+    }
+    .container-contact .content-contact .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 740px){
+    .black-friday .promo-bloco{
+        flex-direction: column;
+    }
+    .promo-texto h2{
+        display: none;
+    }
+    .apresentaçao{
+        background-position:30%;
+    }
+    .principais-promo .box-container-princi .box-princi .content-princi .title-princi{
+      max-width: 400px;  
+    }
+
+}
+
+@media (max-width: 550px){
+    section{
+        padding: 0;
+    }
+    .black-friday  img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px){
+    .logo{
+        font-size: 13px;
+        padding: 0;
+    }
+    ion-icon{
+        padding-right: 10px;
+    }
+    .apresentaçao h1{
+        font-size: 46px;
+    }
+}
